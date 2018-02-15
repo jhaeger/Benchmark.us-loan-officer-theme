@@ -1,0 +1,2209 @@
+/**
+ * Theme Name:  Benchmark Loan Officer
+ * Theme URI:   https://benchmark.us
+ * Author:      Jason Haeger
+ * Author URI:  https://benchmark.us
+ * Description: Custom theme for Benchmark Mortgage Loan Officer websites. You all rock!
+ * Version:     1.6.1
+ * License:     GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Template: make
+ * Text Domain: make
+ * Domain Path: /languages/
+ * Tags:        black, blue, green, gray, orange, red, white, yellow, dark, light, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, fixed-layout, fluid-layout, responsive-layout, buddypress, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, photoblogging
+ *
+ * Make WordPress Theme, Copyright 2015 The Theme Foundry
+ * Make is distributed under the terms of the GNU GPL
+ */
+
+/*
+ * Add your custom styles below.
+ * This version of the Make child theme is only compatible with Make 1.6.0 and above.
+ */
+
+/*---------------------------
+Header styling
+----------------------------*/
+.site-title, 
+.site-title a {
+    font-size:2rem !important;
+    padding-left:2% !important;
+}
+.site-header .site-description {
+    padding-left:4.5% !important;
+    margin-left:0;
+    margin-top:11px;
+    float:none;
+}
+
+@media screen and (max-width:799px) {
+    .header-layout-3 .search-form {
+        float:right;
+    }
+    .menu-toggle {
+        margin-top: -33px;
+        float: left;
+        padding: 6px 10px;
+        background:none;
+        color:#062373;
+        font-weight:800;
+        border-radius:0;
+        box-shadow:0 -1px 1px #dadada;
+    }
+    .toggled .menu-toggle, 
+    .menu-toggle:hover  {
+        box-shadow:0 -1px 3px #aaa;
+    }
+    .site-navigation .menu li a, 
+    .site-navigation .nav-menu li a {
+        border-bottom:1px solid #ddd;
+        box-shadow:0 1px 2px #aaa;
+        text-align:center;
+        background-color:#f8f8f8;
+    }
+    .site-navigation .menu li a:hover, 
+    .site-navigation .nav-menu li a:hover {
+        background-color:#fff;
+        box-shadow:0 1px 2px #222;
+    }
+    .menu {
+    margin-top: 5px;
+    position: relative;
+    margin-bottom: -22px;
+    z-index: 999;
+    }
+    #menu-main-nav {
+        margin-top:0;
+    }
+    .site-title {
+        text-align:center;
+        margin:auto;
+    }
+}
+/*---------------------------
+Welcome Banner styling
+----------------------------*/
+
+#lo-big-container .builder-text-column-1 .builder-text-image .attachment-large,
+#lo-big-container .builder-text-column-1 img.headshot {
+    border: 1px solid #fff; 
+    border-radius: 50%; 
+    height: 220px; 
+    width: 220px; 
+    background-color: rgba(255, 255, 255, 0.5); 
+    box-shadow: 1px 5px 15px #000; 
+    float:right;
+    -webkit-transition:border-radius 0.01s, height 0.01s, width 0.01s, margin-top 0.01s, margin-bottom 0.01s;
+    transition:border-radius 0.01s, height 0.01s, width 0.01s, margin-top 0.01s, margin-bottom 0.01s;
+}
+
+#lo-big-container .builder-text-column-1 .builder-text-image .attachment-large:hover {
+    border-radius: 3px; 
+    height:230px;
+    width:230px;
+    margin-top:-5px;
+    margin-bottom:-5px;
+    -webkit-transition:border-radius 0.01s, height 0.01s, width 0.01s, margin-top 0.01s, margin-bottom 0.01s;
+    transition: border-radius 0.01s, height 0.01s, width 0.01s, margin-top 0.01s, margin-bottom 0.01s;
+}
+
+.bmlo-name-n-info {
+    color:#fff;
+}
+.bmlo-name-n-info small {
+    color:#ccc;
+    font-style:italic;
+}
+
+@media screen and (max-width:799px) {
+    #lo-big-container .builder-text-column-1 .builder-text-image .attachment-large, 
+    #lo-big-container .builder-text-column-1 img.headshot {
+        clear:both;
+        margin:auto;
+        text-align:center;
+        float:none;
+        border-radius: 3px; 
+        height:230px;
+        width:230px;
+        margin-top:-5px;
+        margin-bottom:-5px;
+        -webkit-transition:border-radius 0.01s, height 0.01s, width 0.01s, margin-top 0.01s, margin-bottom 0.01s;
+        transition: border-radius 0.01s, height 0.01s, width 0.01s, margin-top 0.01s, margin-bottom 0.01s;
+    }
+    #lo-big-container .builder-text-column-1 p:nth-child(1) {
+        text-align:center;
+        margin-bottom:0;
+    }
+    #lo-big-container .builder-text-column-2 {
+        text-align:center;
+    }
+    .bmlo-name-n-info {
+        background-color:rgba(20, 20, 20, 0.8);
+        padding:1px;
+        box-shadow:1px 5px 15px #000;
+        border:1px solid #fff;
+        border-bottom:1px solid transparent;
+        border-top-left-radius:5px;
+        border-top-right-radius:5px;
+    }
+    .builder-text-image {
+        margin-bottom:0;
+    }
+}
+
+#lo-big-container {
+    background:url(/wp-content/uploads/2016/01/Website-background-2-compressed.jpg);
+    padding:120px 0 120px 0;
+    box-shadow: inset 0 2px 20px #000;
+    text-shadow:1px 4px 8px #000;
+    background-repeat: repeat !important;
+    /*animation: animatedBackground 120s linear infinite;*/
+}
+
+@-webkit-keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 1368px 0;
+    }
+}
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 1368px 0;
+    }
+}
+
+#lo-big-container .builder-banner-overlay, 
+#lo-big-container .builder-section-overlay {
+    background:-webkit-linear-gradient(rgba(6, 36, 115, 0.4), transparent);
+    background:linear-gradient(rgba(6, 36, 115, 0.4), transparent);
+    background:-webkit-linear-gradient(rgba(0, 0, 0, 0.7), transparent, rgba(0, 0, 0, 0.7));
+    background:linear-gradient(rgba(0, 0, 0, 0.7), transparent, rgba(0, 0, 0, 0.7));
+}
+
+.bmlo-apply {
+    padding:10px 50px;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    -webkit-animation: animatedBackground 10s linear infinite;
+    animation: animatedBackground 10s linear infinite;
+    background-size: 600px;
+    background-color:#062373;
+    border:1px solid #fff;
+    color:#fff;
+    text-shadow:none;
+    border-radius:3px;
+    font-weight:400;
+    box-shadow:1px 4px 8px #000;
+    cursor:pointer;
+}
+
+.bmlo-apply:hover {
+    background-color:rgba(0, 0, 0, 0.8);
+    box-shadow:1px 3px 6px #000;
+    text-decoration:none;
+}
+
+@media screen and (max-width:800px) {
+    #lo-big-container {
+        padding:50px 0 50px 0;
+    }
+}
+/****************************
+LO Home Page Testimonials section 
+****************************/
+/*section element*/
+#welcome-testimonials {
+    box-shadow: inset 0 -5px 10px -2px #ccc, inset 0 5px 10px -2px #ccc;
+    background-color: #f8f8f8;
+}
+#welcome-testimonials .builder-banner-content {
+    color:#333;
+}
+#welcome-testimonials .builder-banner-content blockquote {
+    font-style:italic;
+    text-shadow: 2px 4px 10px #ccc;
+    color:#062373;
+}
+#welcome-testimonials .builder-banner-content p:last-child {
+    font-size:95%;
+}
+#welcome-testimonials .builder-banner-section-title {
+    text-align: center;
+    font-family: "helvetica nue", opensans;
+    color: #333;
+    font-style: italic;
+    text-shadow: 1px 1px 3px #ccc;
+    background: -webkit-linear-gradient(transparent, rgba(255, 255, 255, 0.5), transparent);
+    background: linear-gradient(transparent, rgba(255, 255, 255, 0.5), transparent);
+    margin-top: 2.2rem;
+}
+@media screen and (max-width:799px) {
+    #welcome-testimonials .builder-banner-slide {
+        padding-bottom:300px;
+    }
+    #lo-big-container {
+        margin-bottom:44px;
+        margin-bottom:4.4rem;
+    }
+}
+
+/****************************
+LO Home Page CTA section 
+****************************/
+
+#bmlo-home-cta-section {
+    padding:20px 0 20px;
+    padding:2rem 0 2rem;
+}
+#bmlo-home-cta-section .builder-text-image img {
+    box-shadow:1px 3px 6px #666;
+}
+
+#bmlo-home-cta-section h2 {
+    font-size:2.5rem;
+}
+
+.bmlo-apply-column-btn {
+    padding: 8px 20px;
+    border-radius: 3px;
+    color: #062373;
+    text-align:center;
+    border:2px solid #062373;
+}
+
+.bmlo-apply-column-btn:hover {
+    background-color:#fafafa;
+    text-decoration:none;
+    box-shadow:0 1px 1px #aaa;
+}
+@media screen and (max-width:799px) {
+    .bmlo-apply-column-btn {
+        display:block;
+    }
+}
+/****************************
+Where to start? section styles
+****************************/
+#bmlo-getting-started {
+    box-shadow: inset 0 1px 2px #ddd;
+    border-bottom: 1px solid #222;
+    margin-bottom: 0;
+    background-color: #333;
+    color: #fff;
+    padding:44px 0 20px;
+    padding:4.4rem 0 2rem;
+}
+
+#bmlo-getting-started ul {
+    padding:0;
+    text-align:center;
+    list-style:none;
+}
+#bmlo-getting-started li {
+    display:inline-block;
+}
+
+#bmlo-getting-started input[name=your-name] {
+    width:200px;
+}
+
+#bmlo-getting-started input[name=your-number] {
+    width:128px;
+}
+
+#bmlo-getting-started input[name=your-email] {
+    width:304px;
+}
+#bmlo-getting-started .wpcf7 input[type="submit"] {
+    background-color:#062373;
+    border: 1px solid #fff;
+    box-shadow: 0 0 0 1px #000;
+}
+
+#bmlo-getting-started .wpcf7 input[type="submit"]:hover {
+    background-color:#ddd;
+    box-shadow:0 1px 3px #000;
+}
+#bmlo-getting-started span.wpcf7-not-valid-tip {
+    text-shadow:1px 1px 2px #000;
+}
+#bmlo-getting-started div.wpcf7-validation-errors {
+    box-shadow: 1px 1px 2px #000, 
+                inset 1px 1px 2px #000;
+    text-shadow: 1px 1px 2px #000;
+}
+#bmlo-getting-started textarea {
+    height:44px;
+}
+#bmlo-getting-started textarea::-webkit-input-placeholder {
+    color:    #999;
+    font-weight: normal;
+}
+#bmlo-getting-started textarea:-moz-placeholder {
+    color:    #999;
+    font-weight: normal;
+}
+#bmlo-getting-started textarea::-moz-placeholder {
+    color:    #999;
+    font-weight: normal;
+}
+#bmlo-getting-started textarea:-ms-input-placeholder {
+    color:    #999;
+    font-weight: normal;
+}
+
+@media screen and (max-width:799px){
+    #bmlo-getting-started input[name=your-name] {
+        width:100%;
+    }
+
+    #bmlo-getting-started input[name=your-number] {
+        width:100%;
+    }
+
+    #bmlo-getting-started input[name=your-email] {
+        width:100%;
+    }
+    #bmlo-getting-started li {
+    display:block;
+    }
+}
+/***************************
+Core Values Lending, Contact info, Map <section>
+***************************/
+#bmlo-home-benchmark {
+    padding:100px 0 80px;
+    border-bottom: 1px solid #ccc;
+    box-shadow: inset 0 8px 6px -5px #aaa, inset 0 -5px 6px -5px #aaa;
+    background: -webkit-linear-gradient(#fff, #efefef);
+    background: linear-gradient(#fff, #efefef);
+}
+
+#bmlo-home-benchmark .builder-text-image img {
+    box-shadow:1px 3px 6px #666;
+}
+
+#bmlo-home-benchmark .builder-text-title,
+#bmlo-home-benchmark h3 {
+    text-align:center;
+    text-decoration:underline;
+}
+
+#bmlo-home-benchmark p:nth-child(1) {
+    text-align:center;
+}
+/***************************
+Contact section on Home Page
+***************************/
+
+#bmlo-contact .builder-text-section-title {
+    text-align:center;
+    border-bottom:1px solid #eee;
+    padding-bottom:5px;
+}
+@media screen and (min-width:800px){
+    #bmlo-contact iframe[src*="google.com/maps"] {
+        height:400px;
+    }
+}
+#bmlo-contact iframe[src*="google.com/maps"] {
+    box-shadow: inset 1px 1px 7px #555;
+    padding: 2px;
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+@media screen and (max-width:799px) {
+    .call-me a {
+        background-color: #062373;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 2px #aaa;
+        -webkit-transition:box-shadow .2s ease;
+        transition: box-shadow .2s ease;
+    }
+    .call-me a:hover,
+    .call-me a:active {
+        box-shadow:0 4px 12px #888;
+        text-decoration:none;
+    }
+}
+/***************************
+About Page styles
+***************************/
+
+#bmlo-about img {
+    box-shadow:1px 1px 2px #666
+}
+
+#bmlo-about .builder-text-column-2 {
+    box-shadow: 1px 2px 15px #666;
+    padding: 30px;
+    background-color: #fafafa;
+}
+#about-title {
+    max-width:1024px;
+    margin:auto;
+    background-repeat:no-repeat;
+    background-position-x:center;
+    background-position-y:bottom;
+    background-repeat-y:repeat;
+    background-repeat:repeat-y;
+    background-size: 1050px;
+    box-shadow:inset 0 1px 5px #222, inset 0 -1px 2px #222;
+    height:419px;
+    margin-bottom:44px;
+    background-color:#fff;
+    background-image:url("/wp-content/uploads/sites/121/2016/01/about-background-2.png");
+}
+
+/*#about-title .builder-section-content {
+    height:345px;
+}*/
+@media screen and (min-width:905px) and (max-width:932px) {
+    .site-navigation .menu li a, 
+    .site-navigation .nav-menu li a {
+        font-size:1.33rem !important;
+    }
+}
+@media screen and (min-width:800px) and (max-width:1024px) {
+    #menu-main-nav li {
+        
+    }
+}
+@media screen and (min-width:928px) and (max-width:932px) {
+    #about-title {
+        height:;
+    }
+}
+@media screen and (min-width:912px) and (max-width:927px) {
+    #about-title {
+        height:;
+    }
+}
+@media screen and (max-width:799px) {
+    #about-title {
+        height:387px;
+    }
+}
+#about-title .builder-text-column {
+    position:relative;
+}
+#about-title .builder-text-content {
+    top:35%;
+    color:#fff;
+    text-shadow:1px 1px 5px #222;
+    position:relative;
+}
+#about-title .builder-section-overlay {
+    background:-webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+    background:linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+}
+#about-title h2 {
+    font-size:2.67rem;
+}
+
+/****************************
+CMLS Styles
+****************************/
+
+/*new styles copied from branch site*/
+.cmls-container .builder-text-content, .cmls-container .builder-section-content, .cmls-container {
+    width:100% !important;
+    margin:0;
+    padding-right:0;
+    padding-bottom:0;
+    padding-left:0;
+    max-width:100%;
+}
+
+.cmls-container {
+    
+    /*new styles*/
+    border-top: 4px solid #6995D8;
+    border-bottom: 4px solid #587297;
+    background-color:#eee;
+}
+
+.cmls-container:first-of-type {
+    
+    /*new styles*/
+    border:none;
+}
+
+.cmls-container-title {
+    background: -webkit-linear-gradient(#fff, #eee);
+    background: linear-gradient(#fff, #eee);
+    text-shadow:0 1px 0 #fff;
+    /*new styles*/
+    background: -webkit-linear-gradient(#fff, #fefefe);
+    background: linear-gradient(#fff, #fefefe);
+    box-shadow: inset 0 -4px 5px -2px #333;
+}
+@media screen and (max-width:800px){
+    .cmls-container-title{
+        padding-left:32px;
+        padding-right:32px;
+    }
+}
+.check-my-loan-status {
+    overflow-y:auto;
+    width:100% !important;
+    min-height:585px !important;
+}
+
+#cmls-welcome-message {
+    margin-bottom: 0;
+    box-shadow: inset 0 3px 5px -2px;
+    background: -webkit-linear-gradient(#fefefe, #fff, #fff);
+    background: linear-gradient(#fefefe, #fff, #fff);
+}
+
+.welcome-box {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 50px;
+    box-shadow: 1px 3px 10px 2px #aaa;
+    border: 2px dashed #062373;
+}
+
+@media screen and (max-width:799px) {
+    .welcome-box {
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+/*****************************
+Floify Styles
+*****************************/
+#site-main.site-main.floify {
+    min-height: calc(100vh - 369px - 282px);/* sticky footer-like fix*/
+}
+#floify button#applyNow { /*style the Apply Now button for Flowify*/
+    padding: 2vh 25px;
+    font-size:100%;
+    background-color: #062373;
+    border:2px solid #062373;
+    border-bottom:2px solid rgba(0, 0, 0, 0.5);
+    text-shadow:0 1px 0px rgba(255, 255, 255, 0.5);
+    transition:box-shadow ease 0.2s, text-shadow: ease 0.2s;
+}
+#floify button#applyNow:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.8);
+    transition:box-shadow ease 0.1s, text-shadow: ease 0.1s;
+}
+
+/*****************************
+Blog Page styles
+*****************************/
+[class*="navigation"] .nav-previous a, [class*="navigation"] .nav-previous span, [class*="navigation"] .nav-next a, [class*="navigation"] .nav-next span, #infinite-handle a, #infinite-handle span {
+    color: #062373;
+    border: 1px solid #062373;
+    padding: 3px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 2px #eee, inset 1px 1px 2px #eee;
+    display:inline-block;
+}
+.widget_archive select {
+    width:100%;
+    font-size:1.2em;
+}
+
+.video-testimonial {
+    margin-bottom:50px;
+    border-top:1px solid #ccc;
+    box-shadow: inset 0 1px 0 #eee;
+}
+ 
+/****************************
+Encompass App styles
+****************************/
+@media screen and (max-width:799px){
+    .cmls-container-title .builder-text-column-1 {
+        border-bottom:1px solid #eee;
+        box-shadow:inset 0 -1px 1px -1px #aaa;
+    }
+    .cmls-container-title small {
+        display:block;
+        margin-top:2.2rem;
+        margin-bottom:2.2rem;
+        text-align:center;
+    }
+}
+.bmlo-app-button {
+    background-color: #062373;
+    font-size: 1.25em;
+    margin-right: 10px;
+    margin-left: 10px;
+    box-shadow: 0 2px 5px #aaa;
+}
+.bmlo-app-button:hover {
+    background: #fff;
+    color: #062373;
+    text-shadow: 0 -1px 0 #eee;
+    box-shadow: 0 3px 10px #333;
+}
+.bmlo-app-button-active {
+    background: #fff;
+    color: #062373;
+    text-shadow: 0 -1px 0 #eee;
+    box-shadow: 0 3px 10px #333;
+}
+.bmlo-app-button-active:hover {
+    background:-webkit-linear-gradient(#fff, #efefef);
+    background:linear-gradient(#fff, #efefef);
+}
+#bmlo-short-button:before {
+    height:10px;
+    width:10px;
+    border-radius:50%;
+    background-color:#fff;
+}
+#placeholder .fa-shield {
+    font-size:15em;
+}
+#bmlo-short-app iframe {
+    width: 802px;
+    height: 2170px;
+    box-shadow: 0 7px 15px #999, inset 0 0 2px #222;
+    border: 8px solid #062373;
+    padding: 5px;
+    background-color: #fff;
+    overflow:auto;
+}
+
+#bmlo-long-app iframe {
+    width: 802px;
+    height: 1484px;
+    box-shadow: 0 7px 15px #999, inset 0 0 2px 1px #333;
+    border: 8px solid #062373;
+    padding: 5px;
+    background-color:#fff;
+    background:-webkit-linear-gradient(#ddd, #eee, #fff, #fff, #fff, #fff, #fff, #fff);
+    background:linear-gradient(#ddd, #eee, #fff, #fff, #fff, #fff, #fff, #fff);
+    overflow:auto;
+}
+
+_::-webkit-:not(:root:root), #bmlo-long-app iframe {
+    height:1543px; 
+    position:relative;
+}
+_::-webkit-:not(:root:root), #referral-reminder {
+    /*Safari CSS styles go here*/
+    position:relative;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     /* IE10+ CSS styles go here */
+    #bmlo-long-app iframe {
+        width: 819px;
+        height: 1518px;
+    }
+}
+
+@supports (-ms-accelerator:true) {
+  /* IE Edge 12+ CSS styles go here */ 
+    #bmlo-long-app iframe {
+        width: 814px;
+        height: 1518px;
+    }
+}
+
+@-moz-document url-prefix() {
+    /* Mozilla/Firefox CSS styles go here*/
+    #bmlo-long-app iframe {
+        height:1528px;
+    }    
+    #referral-reminder {
+        padding-left:20px;
+    }
+}
+
+.before-app {
+    font-size: 0.70em;
+    color: #333;
+    padding: 3px 10px 4px 10px;
+    border: 1px solid #062373;
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0 3px 3px 1px #999;
+    background-color: #fefefe;
+    text-shadow: 0 1px 1px #fff;
+}
+/*****************************
+Webcenter calculators page styles
+*****************************/
+#webcenter-calculators p {
+    text-align:center;
+}
+#webcenter-calculators iframe {
+    width:100%;
+    max-width: 600px;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.5);
+    border: 1px solid #eaecee;
+}
+#webcenter-calculators.ttfmp-panels-item-titles .ui-tabs-nav .ui-helper-reset .ui-helper-clearfix .ui-widget-header .ui-corner-all {
+    border-top: 1px solid #eaecee;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    padding-top: 10px;
+}
+#webcenter-calculators.builder-section-panels .ui-tabs .ui-tabs-panel {
+    background: #eaecee !important;
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.4);
+}
+#webcenter-calculators.builder-section-panels .ui-tabs .ui-tabs-nav {
+    border-top: 1px solid #eaecee !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4) !important;
+    padding-top: 10px !important;
+    background-color:#ccd5dd !important;
+}
+#calc-cta a {
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    -webkit-animation: animatedBackground 30s linear infinite;
+    animation: animatedBackground 30s linear infinite;
+    background-size: 400px;
+}
+#calc-cta a:hover {
+    -webkit-animation-play-state:paused;
+    animation-play-state:paused;
+}
+/*****************************
+Contact Form 7 support
+*****************************/
+.wpcf7-form-control:not(.wpcf7-checkbox), .wpcf7-text, .wpcf7-validates-as-required {
+    width:100%;
+    box-shadow:inset 0 1px 2px #aaa;
+    border:1px solid #aaa;
+}
+.wpcf7 input[type="submit"] {
+    padding:10px;
+    font-size:2rem;
+    box-shadow:none;
+    background-color:#062373;
+    border:1px solid #062373
+}
+.wpcf7 input[type="submit"]:hover {
+    background-color:#eee;
+    color:#062373;
+    border:1px solid #062373;
+    box-shadow:0px 1px 3px #888;
+}
+.wpcf7 input[type="text"] {
+    margin:0;
+}
+.wpcf7 input, .wpcf7-textarea  {
+    background-color:#fdfdfd;
+}
+.wpcf7 p {
+    text-shadow:0 1px 1px #fdfdfd;
+    font-weight:600;
+}
+
+#benchmark-u-loan-process h3 {
+    margin-top:0;
+}
+
+#sidebar-right .BestTimetoReachYou textarea {
+    height:60px;
+}
+
+.BestTimetoReachYou textarea::-webkit-input-placeholder { /* Safari, Chrome and Opera */
+  color: #aaa;
+}
+
+.BestTimetoReachYou textarea:-moz-placeholder { /* Firefox 18- */
+  color: #aaa;
+}
+
+.BestTimetoReachYou textarea::-moz-placeholder { /* Firefox 19+ */
+  color: #aaa;
+}
+
+.BestTimetoReachYou textarea:-ms-input-placeholder { /* IE 10+ */
+  color: #aaa;
+}
+
+.BestTimetoReachYou textarea::-ms-input-placeholder { /* Edge */
+  color: #aaa;
+}
+
+.BestTimetoReachYou textarea:placeholder-shown { /* Standard one last! */
+  color: #aaa;
+}
+
+.BestTimetoReachYou textarea:placeholder-shown {
+    color:#aaa;
+}
+
+
+    
+
+/*****************************
+Footer styles
+*****************************/
+.site-footer .wpcf7 p {
+    text-shadow:none;
+    font-weight:initial;
+}
+.footer-social-links {
+    margin-top:0;
+}
+
+/*.footer-social-links::after {
+    content:"Consumers wishing to file a complaint against a mortgage banker or a licensed mortgage banker residential mortgage loan originator should complete and send a complaint form to the Texas Department of Savings and Mortgage Lending, 2601 North Lamar, Suite 201, Austin, TX 78705. Complaint forms and instructions may be obtained from the Department's website at www.sml.texas.gov. A toll-free consumer hotline is available at 1-877-276-5550. The Department maintains a recovery fund to make payments of certain actual out of pocket damages sustained by borrowers caused by acts of Licensed Mortgage Banker Residential Mortgage Loan Originators. A written application for reimbursement from the recovery fund must be filed with and investigated by the Department prior to the payment of a claim. For more information about the recovery fund, please consult the Department's website at www.sml.texas.gov.";
+    text-align:justify;
+    font-size:1.05rem;
+    line-height:1.6;
+    display:block;
+    margin-top:20px;
+}
+*/
+
+/******************************
+Your Loan Process (The Way Home) styles
+******************************/
+#lp-intro-copy,
+#lp-start-copy {
+    width: 85%;
+    position: relative;
+    font-size: 1.1em;
+    text-shadow: 0 1px 0 #ddd;
+    color: #2e4455;
+}
+#lp-intro-copy strong,
+#lp-start-copy strong {
+    color:#eee;
+    text-shadow:3px 3px 1px #3f5566;
+    font-size:1.3em;
+    margin-bottom:0;
+}
+#lp-intro-copy small,
+#lp-start-copy small {
+    font-size: 85%;
+    color: #eee;
+    text-shadow: 1px 2px 1px #3f5566;
+}
+.closed {
+    display:none !important;
+}
+@media screen and (max-width:863px) {
+    #lp-intro-copy, 
+    #lp-start-copy {
+        width:100%;
+        margin:auto;
+    }
+}
+
+@media screen and (max-width:799px) {
+    .active-content {
+        display:block !important;
+        /*so the content display!*/
+    }
+
+    #intro .background-mobile {
+        background-color: rgba(255, 255, 255, 0.6);
+        display: inline-block;
+        padding: 10px;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        text-shadow: 0 1px 1px #fff;
+    }
+}
+
+.prompt {
+    text-align:center;
+    font-size:2em;
+    font-weight:bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+@media screen and (max-width:499px) {
+    .prompt {
+        font-size: 1.5em;
+        line-height: 1.2;
+    }
+}
+#questions, 
+.see-all-container{
+    margin-right:140px;
+    position:relative;
+    z-index: 1;
+}
+
+@media screen and (max-width:863px) {
+    #questions, 
+    .see-all-container {
+        margin-right:0;
+    }
+}
+
+#questions button {
+    margin:10px;
+    font-size:17px;
+    padding-left:20px;
+    padding-right:20px;
+    box-shadow:0 1px 2px #777;
+    background:-webkit-linear-gradient(#eee, #fff);
+    background:linear-gradient(#eee, #fff);
+    border-radius:5px;
+    color:#333;
+    text-shadow:0 1px 0 #fff;
+}
+#questions button:hover {
+    box-shadow:0 2px 6px #666;
+    background:-webkit-linear-gradient(#fff, #eee);
+    background:linear-gradient(#fff, #eee);
+    color:#555;
+}
+#questions button:active {
+    background: -webkit-linear-gradient(#e0e0e0, #f0f0f0);
+    background: linear-gradient(#e0e0e0, #f0f0f0);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0 #f8f8f8;
+}
+#see-all {
+    background: -webkit-linear-gradient(#fff, #ccc);
+    background: linear-gradient(#fff, #ccc);
+    color: #062373;
+    text-shadow: 0px 1px 0 #fff;
+    box-shadow: 1px 2px 5px #333;
+    border: 1px solid #ddd;
+    padding: 7px;
+    border-radius: 1.5rem;
+}
+#see-all:hover {
+    margin-top: -2px;
+    margin-left: -1px;
+    margin-right: 1px;
+    box-shadow: 2px 4px 8px #333;
+    padding: 8px;
+}
+#see-all:active {
+    box-shadow: inset 0 1px 7px #222;
+    padding: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 2px;
+    margin-left: 1px;
+    margin-bottom: -2px;
+    margin-right: -1px;
+    background: -webkit-linear-gradient(#ccc, #eee);
+    background: linear-gradient(#ccc, #eee);
+    text-shadow: 0 1px 0 #eee;
+}
+#see-all:active {
+}
+#questions button:active {
+    background:-webkit-linear-gradient(#eee, #fff);
+    background:linear-gradient(#eee, #fff);
+}
+
+#questions div {
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.7);
+    margin: 0 10px 20px 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+#restart {
+    background-color:#171717;
+    margin-top:-1px;
+}
+button#restart {
+    text-align:center;
+    box-shadow:0 1px 3px rgba(0, 0, 0, 0.4);
+    margin:auto;
+    background:-webkit-linear-gradient(#eee, #fff);
+    background:linear-gradient(#eee, #fff);
+    color:#777;
+    padding:5px 15px;
+}
+button#restart:hover {
+    color:#555;
+    background:-webkit-linear-gradient(#fff, #eee);
+    background:linear-gradient(#fff, #eee);
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.6);
+    text-shadow:0 1px 0 #fff;
+}
+#intro {
+    overflow:hidden;
+    box-shadow:inset 0 3px 6px -3px rgba(100, 100, 100, 0.7);
+    padding-top:0;
+    padding-bottom:0;
+    min-height:800px;
+    background-image:url(/wp-content/uploads/2016/01/bkgrnd.png);
+    background-color:rgb(157,190, 202);
+}
+
+#intro .builder-section-content {
+    max-width:100%;
+    padding:0;
+}
+
+.width-corrected {
+    padding: 0 32px;
+    padding: 0 3.2rem;
+    max-width:1024px;
+    margin:0 auto;
+    padding-bottom:110px;
+}
+#intro .width-corrected {
+    z-index:2;
+}
+#intro h1 {
+    font-size: 130px;
+    font-family: 'Bebas Neue', 'Oswald', sans-serif;
+    color: rgb(98, 144, 191);
+    line-height: 1.03;
+    text-shadow: 5px 5px 0px #3f5566;
+    -webkit-text-stroke: 2px #eee;
+    z-index:3;
+    position:relative;
+    color:#eee;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #intro h1  { 
+        color: rgb(98, 144, 191);
+        -webkit-text-stroke: 2px #eee;
+    }
+}
+
+@media screen and (max-width:799px) {
+    #intro h1 {
+        text-align:center;
+    }
+}
+@media screen and (max-width:495px) {
+    #intro h1 {
+        font-size:61px;
+    }
+}
+@media screen and (max-width:400px) {
+    #intro h1 {
+        font-size:61px;
+        text-shadow: 5px 5px 0px #3f5566;
+    }
+}
+#intro:before {
+    height: 6px;
+    width: 80%;
+    background-color: #78693A;
+    float: right;
+    margin-right: 10%;
+    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.7);
+    margin-bottom: 45px;
+    border-top: 1px solid #9D8B50;
+}
+#intro .key {
+    margin-top: -7.46rem;
+    position: relative;
+    z-index: 0;
+    margin-bottom: -589px;
+    margin-right:-30px;
+    -webkit-animation:swing 3.5s ease-in-out infinite alternate;
+    animation:swing 3.5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes swing {
+    0% { /* IE 9 */
+    -webkit-transform: rotate(10deg); /* Safari */
+    transform: rotate(10deg);
+    margin-top:-84px;
+    margin-right:44px;
+    }
+    10%{margin-top:-84px;}
+    25%{margin-top:-82px;}
+    40% {margin-top:-79px;}
+    50% {margin-top:-76px;}
+    75% {margin-top:-74px;}
+    100% { /* IE 9 */
+    -webkit-transform: rotate(-10deg); /* Safari */
+    transform: rotate(-10deg);
+    margin-top:-74px;
+    margin-right:-55px;
+    }
+}
+@keyframes swing {
+    0% { /* IE 9 */
+    -webkit-transform: rotate(10deg); /* Safari */
+    transform: rotate(10deg);
+    margin-top:-84px;
+    margin-right:44px;
+    }
+    10%{margin-top:-84px;}
+    25%{margin-top:-82px;}
+    40% {margin-top:-79px;}
+    50% {margin-top:-76px;}
+    75% {margin-top:-74px;}
+    100% { /* IE 9 */
+    -webkit-transform: rotate(-10deg); /* Safari */
+    transform: rotate(-10deg);
+    margin-top:-74px;
+    margin-right:-55px;
+    }
+}
+.townbg {    
+    position: relative;
+    bottom: 0;
+    min-height:726px;
+    width: auto;
+    background-image: url(/wp-content/uploads/2016/01/intro-townbg.png);
+    background-repeat: repeat-x;
+    background-position-x: center;
+    background-position-y:bottom;
+    z-index:1;
+    margin-bottom:-19px;
+    box-shadow:inset 0 -6px 6px -3px rgba(0, 0, 0, 0.7);
+}
+/*********** Loan Officer Q section */
+#lo {
+    min-height:568px;
+    padding-bottom:0;
+    background-color:rgb(0, 102, 255);
+    text-shadow:1px 3px 6px rgba(0, 0, 0, 0.7);
+    position:relative;
+    z-index: 3;
+    margin-top:-1px;
+}
+#lo h2 {
+    font-size: 46px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height:1;
+    margin-top:80px;
+    margin-bottom:25px;
+}
+#lo hr {
+    box-shadow:1px 3px 6px rgba(0, 0, 0, 0.7);
+}
+#lo a {
+    text-shadow:0 1px 2px rgba(255, 255, 255, 0.7);
+}
+#lo a:hover {
+    text-shadow:1px 3px 6px rgba(0, 0, 0, 0.7);
+    color:#f8f8f8;
+}
+#ll-button {
+    margin-bottom: -.7rem; 
+    background-color: #fff; 
+    padding: .3rem;
+    box-shadow:1px 3px 6px rgba(0, 0, 0, 0.7);
+}
+#ll-button:hover {
+    background-color:#efefef;
+    box-shadow:1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+    
+#lo-bg {
+    background-image: url(/wp-content/uploads/2016/01/lo-graphic-bg2.png);
+    height: 568px;
+    margin-left: -246px;
+    background-repeat: no-repeat;
+    margin-right: -200px;
+    margin-bottom: -108px;
+    overflow: hidden;
+    background-position-y: -108px;
+    box-shadow: inset 6px 0px 30px 20px rgb(0, 102, 255);
+    border-top-left-radius: 75px;
+    border-bottom-left-radius: 75px;
+}
+.tab span   {
+    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.5);
+}
+#tab {
+    padding:0;
+    height:0;
+    text-align:center;
+    background-color:#333;
+}
+#tab .builder-text-column {
+    height:0 !important;
+    margin-bottom:-1px;
+}
+#tab .tab {
+    margin-top:-56px;
+    font-size:4rem;
+    display:block;
+}
+#tab .tab a {
+    box-shadow:1px -2px 5px rgba(0, 0, 0, 0.5);
+    text-shadow:1px 3px 6px rgba(0, 0, 0, 0.7);
+    -webkit-transition:text-shadow 0.25s;
+    transition:text-shadow 0.25s;
+}
+#tab .tab a:hover, 
+#tab .tab a:active {
+    text-decoration:none;
+    text-shadow:1px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#tab .tab a:focus {
+    text-decoration:none;
+}
+#lo .lo-graphic {
+    max-width:504px;
+    max-height:373px;
+    margin-top:-500px;
+    margin-left:-100px;
+}
+#one, 
+#one-a {
+    font-size:25px;
+    font-family:'Dosis', 'Oswald', sans-serif;
+    color:#fff;
+    font-weight:100;
+    line-height:1.5;
+    position:relative;
+}
+
+.lense {
+    position:relative;
+    -webkit-animation:scroll 10s ease-in-out infinite;
+    animation:scroll 10s ease-in-out infinite;
+}
+@-webkit-keyframes scroll {
+    10% {-webkit-transform: translate(250px, 50px);transform: translate(250px, 50px);}
+    30% {-webkit-transform: translate(140px, 100px);transform: translate(140px, 100px);}
+    50% {-webkit-transform: translate(80px, 65px);transform: translate(80px, 65px);}
+    80% {-webkit-transform: translate(90px, 220px);transform: translate(90px, 220px);}
+}
+@keyframes scroll {
+    10% {-webkit-transform: translate(250px, 50px);transform: translate(250px, 50px);}
+    30% {-webkit-transform: translate(140px, 100px);transform: translate(140px, 100px);}
+    50% {-webkit-transform: translate(80px, 65px);transform: translate(80px, 65px);}
+    80% {-webkit-transform: translate(90px, 220px);transform: translate(90px, 220px);}
+}
+@media screen and (max-width:799px) {
+    #lo {
+        padding-bottom:50px;
+    }
+    #lo-bg {
+        margin-left:-30px;
+    }
+    #lo .builder-text-column-1 {
+        text-align:center;
+    }
+    #lo h2 {
+        margin-top:-20px;
+        font-size:41px;
+    }
+    #lo .lo-graphic {
+        max-width:125%;
+        margin-bottom:50px;
+        margin-left:-20px;
+        background-position-x:center !important;
+    }
+    .site-content {
+        overflow-x:hidden;
+    }
+}
+@media screen and (max-width:400px) {
+    #lo-bg {
+        height:500px;
+    }
+}
+/*magnific popup style rules*/
+.white-popup {
+  position: relative;
+  background: #fafafa;
+  padding: 20px 20px 0 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+}
+.white-popup h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+.white-popup ul {
+  list-style:none;
+  padding-left:0;
+}
+.white-popup .wpcf7 input[type="submit"] {
+    background-color: #062373;
+    border: 1px solid #fff;
+}
+.white-popup .wpcf7 input[type="submit"]:hover {
+    background-color: transparent;
+    color: #062373;
+    border: 1px solid #062373;
+    box-shadow: 0 1px 3px -1px #65D;
+}
+/*************Pre-Approved Section*/
+#get-preapproved {
+    min-height: 568px;
+    font-size:25px;
+    font-family:'Dosis', 'Oswald', sans-serif;
+    color:#fff;
+    text-shadow:1px 3px 6px rgba(0, 0, 0, 0.7);
+    font-weight:100;
+    line-height:1.5;
+    background: -webkit-linear-gradient(#333, #151515, #222);
+    background: linear-gradient(#333, #151515, #222);
+    overflow:hidden;
+    width:100%;
+}
+#get-preapproved h2 {
+    font-size: 41px;
+    font-family: "Montserrat";
+    color: rgb(0, 102, 255);
+    font-weight: bold;
+    line-height: 1;
+    margin-top: 110px;
+    margin-bottom: 25px;
+}
+#get-preapproved hr {
+    color:rgb(0, 102, 255) !important;
+    box-shadow:1px 3px 6px rgba(0, 0, 0, 0.7);
+}
+#get-preapproved p {
+    color:#fff;
+    
+}
+#get-preapproved #two {
+    margin-bottom:50px;
+}
+#get-preapproved img {
+    margin-right:-100px;
+    margin-top:97px;
+    max-width:504px !important;
+    border: 2px solid #fff;
+    background-color:#222;
+    border-radius: 2em;
+    box-shadow: inset 0 1px 3px #000, 0 1px 3px #000;
+}
+#get-preapproved .button-mobile {
+    display:block;
+    border:none;
+    border-radius:0;
+    background-color:rgb(0, 102, 255);
+    width:460px;
+    margin-top:45px;
+    text-transform:uppercase;
+    text-shadow:none;
+}
+#get-preapproved .button-mobile:hover {
+    background-color: #fff;
+    color: rgb(0, 102, 255);
+    background: -webkit-linear-gradient(#fff, #ddd);
+    background: linear-gradient(#fff, #ddd);
+    text-shadow: 0 1px 1px #fff;
+}
+@media screen and (max-width:799px){
+    #get-preapproved .button-mobile {
+        width:100%;
+        font-size:22px;
+    }
+    #get-preapproved img {
+        margin:auto;
+        margin-top:50px;
+        margin-bottom:50px;
+    }
+}
+@media screen and (max-width:450px) {
+    #get-preapproved img {
+        margin-left:-65px;
+        margin-top:0;
+        margin-bottom:50px;
+    }
+}
+/*magnific popup style rules*/
+.apply-popup {
+  position: relative;
+  width: auto;
+  margin: 20px auto;
+}
+.apply-popup .mfp-close {
+    color:#fff !important;
+}
+.apply-popup .new-tab {
+    padding: 5px 8px;
+    background-color: #ccc;
+    color: #111;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.apply-popup .new-tab:hover {
+    background-color: #ddd;
+    color: #333;
+    text-decoration: none;
+}
+    
+@media screen and (min-width:800px) {
+    .apply-popup {
+        margin:20px 100px;
+    }
+}
+/********Find Your Realtor*/
+#three {
+    background-color:#00adef;
+    text-shadow:1px 3px 6px rgba(0, 0, 0, 0.7);
+    color:#fff;
+    overflow:hidden;
+}
+#three p {
+    font-size:25px;
+    font-family:'Dosis', 'Oswald', sans-serif;
+    color:#fff;
+    font-weight:100;
+    line-height:1.5;
+}
+#three #realtor-bg {
+    background:url(/wp-content/uploads/2016/01/realtor-graphic-bg-full.png);
+    width:829px;
+    margin-left:-353px;
+    margin-bottom:-401px;
+    height:969px;
+    box-shadow: inset 20px 0 70px #00adef;
+}
+#three #realtor-graphic {
+}
+#three #realtor-graphic .realtor-guy {
+    margin-bottom:-79px;
+    min-width:403px;
+}
+#three #realtor-graphic .realtor-key {
+    margin-left:515px;
+    margin-top:30px;
+    margin-bottom:-150px;
+    -webkit-animation: key 2s infinite;
+    animation: key 2s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+#three h2 {
+    font-size: 46px;
+    font-family: "Montserrat", "Oswald", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height:1;
+    margin-top:80px;
+    margin-bottom:25px;
+    text-transform:uppercase;
+}
+@-webkit-keyframes key {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(89.7deg);
+    transform: rotateY(89.7deg);
+  }
+}
+@keyframes key {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(89.7deg);
+    transform: rotateY(89.7deg);
+  }
+}
+#three hr {
+    box-shadow:1px 3px 6px rgba(0, 0, 0, 0.7);
+}
+#three a {
+    text-shadow:0 1px 2px rgba(255, 255, 255, 0.7);
+}
+#three a:hover {
+    text-shadow:1px 3px 6px rgba(0, 0, 0, 0.7);
+    color:#f8f8f8;
+}
+@media screen and (max-width:799px){
+    #three #realtor-bg {
+        margin-left:-32px;
+        margin-top:20px;
+    }
+}
+@media screen and (max-width:650px){
+    #three #realtor-bg {
+        margin-left:-100px;
+    }
+}
+@media screen and (max-width:560px){
+    #three #realtor-bg {
+        margin-left:-190px;
+    }
+}
+@media screen and (max-width:460px) {
+    #three #realtor-bg {
+        margin-left:-230px;
+    }
+}
+@media screen and (max-width:400px) {
+    #three #realtor-graphic  {
+        min-width:inherit;
+        max-width:100%;
+        margin-left:-50px;
+    }
+    #three #realtor-graphic .realtor-guy {
+        max-width:100%;
+    }
+    #three #realtor-graphic .realtor-key {
+        float:right;
+        margin-right:200px;
+        margin-bottom:-155px;
+    }
+    #three h2 {
+        margin-top:11px;
+    }
+}
+.blog-post-popup {
+    margin-top: 100px;
+    margin:auto;
+    max-width:1200px;
+    position:relative;
+}
+.blog-post-popup article {
+    background-color:#fff;
+    padding: 20px 50px;
+    border:2px solid #628BAB;
+}
+.blog-post-popup .open-close {
+    background-color:none;
+    margin-top:100px;
+}
+
+.blog-post-popup .mfp-close {
+    color: #FFF !important;
+}
+
+.blog-post-popup .new-tab {
+    padding: 5px 8px;
+    background-color: #ccc;
+    color: #111;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.blog-post-popup .new-tab:hover {
+    background-color: #ddd;
+    color: #333;
+    text-decoration: none;
+}
+    
+/***********Find Your Home */
+#four {
+    min-height: 568px;
+    font-size:25px;
+    font-family:'Dosis', 'Oswald', sans-serif;
+    color:#fff;
+    text-shadow:1px 3px 6px rgba(0, 0, 0, 0.7);
+    font-weight:100;
+    line-height:1.5;
+    background: -webkit-linear-gradient(#222, #151515, #333);
+    background: linear-gradient(#222, #151515, #333);
+    overflow:hidden;
+}
+#four h2 {
+    font-size: 41px;
+    font-family: "Montserrat", "Oswald", sans-serif;
+    color: #00adef;
+    font-weight: bold;
+    line-height: 1;
+    margin-top: 110px;
+    margin-bottom: 25px;
+    text-transform:uppercase;
+}
+#four hr {
+    border-color:#00adef !important;
+    box-shadow:1px 3px 6px rgba(0, 0, 0, 0.7);
+}
+#four p {
+    color:#fff; 
+}
+#four .button-mobile{
+    display:block;
+    border:none;
+    border-radius:0;
+    background-color:#00adef;
+    width:460px;
+    margin-top:45px;
+    text-transform:uppercase;
+    text-shadow:none;
+    text-align:center;
+    margin-bottom:50px;
+}
+#four .button-mobile:hover{
+    background-color: #fff;
+    color: #00adef;
+    font-weight:bold;
+    background: -webkit-linear-gradient(#fff, #ddd);
+    background: linear-gradient(#fff, #ddd);
+    text-shadow: 0 1px 1px #fff;
+}
+#four .house-graphic {
+    max-width:504px;
+    margin-top:80px;
+}
+#four .sale-sign {
+    margin-top:-165px;
+    margin-left:440px; 
+    float:right;
+    position:relative;
+    margin-right:-300px;
+}
+@media screen and (max-width:1485px) {
+    #four .sale-sign {
+        margin-right:-250px;
+    }
+}
+@media screen and (max-width:1385px) {
+    #four .sale-sign {
+        margin-right:-200px;
+        margin-top:-150px;
+    }
+}
+@media screen and (max-width:1285px) {
+    #four .sale-sign {
+        margin-right:-150px;
+        margin-top:-140px;
+    }
+}
+@media screen and (max-width:1185px) {
+    #four .sale-sign {
+        margin-right:-100px;
+    }
+}
+@media screen and (max-width:1085px) {
+    #four .sale-sign {
+        margin-right:-50px;
+    }
+}
+
+#four .builder-text-column-2 {
+    margin-left:-40px;
+    z-index:-1;
+    position:relative;
+}
+
+@media screen and (max-width:799px){
+    #four .button-mobile {
+        width:100%;
+        font-size:22px;
+    }
+    #four .builder-text-column-2 {
+        margin-left:0;
+    }
+    #four .sale-sign {
+        margin-right:120px;
+        margin-bottom:50px;
+    }
+    #four .house-graphic {
+        margin-top:0;
+        max-width:100%;
+    }
+}
+@media screen and (max-width:640px) {
+    #four .sale-sign {
+        padding-top:70px;
+        margin-right:0;
+    }
+}
+/**************** Sign the Contract Section */
+#five {
+    background-color:#c42b51;
+    text-shadow:1px 3px 6px rgba(0, 0, 0, 0.7);
+    color:#fff;
+    overflow:hidden;
+    padding-bottom:50px;
+}
+#five p {
+    font-size:25px;
+    font-family:'Dosis', 'Oswald', sans-serif;
+    color:#fff;
+    font-weight:100;
+    line-height:1.5;
+}
+#five h2 {
+    font-size: 46px;
+    font-family: "Montserrat", "Oswald", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height:1;
+    margin-top:80px;
+    margin-bottom:25px;
+    text-transform:uppercase;
+}
+#five hr {
+    box-shadow:1px 3px 6px rgba(0, 0, 0, 0.7);
+}
+#five a {
+    text-shadow:0 1px 2px rgba(255, 255, 255, 0.7);
+}
+#five a:hover {
+    text-shadow:1px 3px 6px rgba(0, 0, 0, 0.7);
+    color:#f8f8f8;
+}
+#five .contract-graphic {
+    margin-top:80px;
+    -webkit-animation:contract 3s ease-in-out alternate infinite;
+    animation:contract 3s ease-in-out alternate infinite;
+}
+@media screen and (min-width:800px) {
+    @-webkit-keyframes contract {
+        0% {
+            -webkit-transform:rotate(-2deg);
+            transform:rotate(-2deg);
+        }
+        25% {
+            margin-top:90px;
+        }
+        50% {
+            -webkit-transform:rotate(2deg);
+            transform:rotate(2deg);
+        }
+        75% {
+            margin-top:75px;
+        }
+        100% {
+            -webkit-transform:rotate(-2deg);
+            transform:rotate(-2deg);
+        }
+    }
+    @keyframes contract {
+        0% {
+            -webkit-transform:rotate(-2deg);
+            transform:rotate(-2deg);
+        }
+        25% {
+            margin-top:90px;
+        }
+        50% {
+            -webkit-transform:rotate(2deg);
+            transform:rotate(2deg);
+        }
+        75% {
+            margin-top:75px;
+        }
+        100% {
+            -webkit-transform:rotate(-2deg);
+            transform:rotate(-2deg);
+        }
+    }
+}
+@media screen and (max-width:1021px){
+    #five .contract-graphic {
+        margin-top:50px;
+    }
+}
+@media screen and (max-width:890px){
+    #five .contract-graphic {
+        margin-top:30px;
+    }
+}
+@media screen and (max-width:799px){
+    #five .contract-graphic {
+        margin:auto;
+        margin-top:80px;
+        max-width:auto;
+    }
+}
+/*************Loan Estimate*/   
+#loan-estimate {
+    background:-webkit-linear-gradient(#444, #373737, #171717);
+    background:linear-gradient(#444, #373737, #171717);
+    text-shadow:1px 3px 6px rgba(0, 0, 0, 0.7);
+    padding-bottom:50px;
+}
+#loan-estimate h2 {
+    font-size: 46px;
+    font-family: "Montserrat", "Oswald", sans-serif;
+    color: #c42b51;
+    font-weight: bold;
+    line-height:1;
+    margin-top:80px;
+    margin-bottom:25px;
+    text-transform:uppercase;
+}
+#loan-estimate hr {
+    box-shadow:1px 3px 6px rgba(0, 0, 0, 0.7);
+}
+#loan-estimate p {
+    font-size:25px;
+    font-family:'Dosis', 'Oswald', sans-serif;
+    color:#fff;
+    font-weight:100;
+    line-height:1.5;
+}
+#loan-estimate img {
+    margin-top:50px;
+}
+#loan-estimate a {
+    color: rgba(196, 43, 81, 0.9);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+#loan-estimate a:hover {
+    color:#efefef;
+    text-shadow:1px 3px 6px rgba(0, 0, 0, 0.7);
+}
+/**************Relax section*/
+#seven {
+    background-color:#c4b763;
+    text-shadow:1px 3px 6px rgba(0, 0, 0, 0.7);
+    padding-bottom:0;
+    padding-top:80px;
+}
+#seven h2 {
+    font-size: 46px;
+    font-family: "Montserrat", "Oswald", sans-serif;
+    color: #fff;
+    font-weight: bold;
+    line-height:1;
+    margin-top:35px;
+    margin-bottom:25px;
+    text-transform:uppercase;
+}
+#seven hr {
+    box-shadow:1px 3px 6px rgba(0, 0, 0, 0.7);
+}
+#seven p {
+    font-size:25px;
+    font-family:'Dosis', 'Oswald', sans-serif;
+    color:#fff;
+    font-weight:100;
+    line-height:1.5;
+    margin-bottom:50px;
+}
+#seven a {
+    text-shadow:0 1px 2px rgba(255, 255, 255, 0.7);
+    color:rgb(137, 128, 71);
+}
+#seven a:hover {
+    text-shadow:1px 3px 6px rgba(0, 0, 0, 0.7);
+    color:#f8f8f8;
+}
+#seven img {
+    margin-top: 80px;
+    max-height: 400px !important;
+}
+/*************Final Approval*/
+#eight {
+    background-color:#eee;
+    padding-bottom:50px;
+    text-shadow:0 2px 1px #fff;
+}
+
+#eight h2 {
+    color:#242527;
+    font-size: 46px;
+    font-family: "Montserrat", "Oswald", sans-serif;
+    font-weight: bold;
+    line-height:1;
+    margin-top:80px;
+    margin-bottom:25px;
+    text-transform:uppercase;
+    text-align:center;
+}
+#eight hr {
+    box-shadow:0 2px 1px #fff;
+}
+#eight p {
+    font-size:25px;
+    font-family:'Dosis', 'Oswald', sans-serif;
+    color:#242527;
+    font-weight:100;
+    line-height:1.5;
+}
+#eight .stamp {
+    margin-left:-3.2rem;
+    float:left;
+    display:inline-block;
+    margin-right: 3.3333333333%;
+    padding-right:3.2rem;
+    min-height:225px;
+}
+@media screen and (max-width:799px){
+    #eight .stamp {
+        margin-left:0;
+        margin-right:0;
+        padding:none;
+        float:none;
+        display:block;
+        text-align:center;
+        height:auto;
+    }
+}
+        
+/*************Closing Section*/
+#nine {
+    background-color:#222;
+    padding-bottom:50px;
+}
+#nine h2 {
+    color:#c4b763;
+    font-size: 46px;
+    font-family: "Montserrat", "Oswald", sans-serif;
+    font-weight: bold;
+    line-height:1;
+    margin-top:80px;
+    margin-bottom:25px;
+    text-transform:uppercase;
+}
+#nine hr {
+    box-shadow:0 2px 1px rgba(0, 0, 0, 0.7);
+}
+#nine p {
+    font-size:25px;
+    font-family:'Dosis', 'Oswald', sans-serif;
+    color:#fff;
+    font-weight:100;
+    line-height:1.5;
+}
+#nine h3 {
+    color:#c4b763;
+    font-family: "Montserrat", "Oswald", sans-serif;
+}
+#nine a {
+    color:#555;
+    text-shadow:1px 3px 6px rgba(0, 0, 0, 0.7);
+}
+#nine a:hover, 
+#nine a:active {
+    color:#fff;
+}
+#nine .builder-text-column-2 {
+    margin-top:80px;
+}
+#nine .hands {
+    min-width:442px;
+    height:412px;
+    margin-right:-32px;
+    margin-left:-3.33333333333%;
+}
+@media screen and (max-width:1144px){
+    #nine .hands {
+        margin-left:-75px
+    }
+}
+@media screen and (max-width:1024px){
+    #nine .hands {
+        margin-right:0;
+        margin-left:-100px;
+    }
+}
+@media screen and (max-width:799px){
+    #nine .hands {
+        margin:auto;
+        width:442px;
+    }
+}
+#nine .hand-one {
+    margin-bottom:30px;
+    -webkit-animation:hand 5s ease-in-out infinite;
+    animation:hand 5s ease-in-out infinite;
+}
+#nine .hand-two {
+    margin-top:13px;
+    -webkit-animation:two 5s ease-in-out infinite;
+    animation:two 5s ease-in-out infinite;
+    margin-right:0;
+}
+@-webkit-keyframes hand {
+  0% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    margin-top:-5px;
+    margin-bottom:30px;
+  }
+  15% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      margin-top:5px;
+      margin-bottom:30px;
+  }
+  50% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+    margin-bottom:0px;
+    margin-top:43px;
+  }
+  80% {
+      -webkit-transform: rotate(10deg);
+      transform: rotate(10deg);
+      margin-bottom:0px;
+      margin-top:43px;
+  }
+  100%{
+      -webkit-transform: rotate(-5deg);
+      transform: rotate(-5deg);
+      margin-top:-5px
+  }
+}
+@keyframes hand {
+  0% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    margin-top:-5px;
+    margin-bottom:30px;
+  }
+  15% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      margin-top:5px;
+      margin-bottom:30px;
+  }
+  50% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+    margin-bottom:0px;
+    margin-top:43px;
+  }
+  80% {
+      -webkit-transform: rotate(10deg);
+      transform: rotate(10deg);
+      margin-bottom:0px;
+      margin-top:43px;
+  }
+  100%{
+      -webkit-transform: rotate(-5deg);
+      transform: rotate(-5deg);
+      margin-top:-5px
+  }
+}
+
+@-webkit-keyframes two {
+    0%{
+        margin-top:17px;
+        margin-right:-25px;
+    }
+    15% {
+        margin-top:12px;
+        margin-right:-22px;
+    }
+    50% {
+        margin-top:0px;
+        margin-right:0
+    }
+    80% {
+        margin-top:2px;
+        margin-right:0px;
+    }
+    100% {
+        margin-top:17px;
+        margin-right:-25px;
+    }
+}
+
+@keyframes two {
+    0%{
+        margin-top:17px;
+        margin-right:-25px;
+    }
+    15% {
+        margin-top:12px;
+        margin-right:-22px;
+    }
+    50% {
+        margin-top:0px;
+        margin-right:0
+    }
+    80% {
+        margin-top:2px;
+        margin-right:0px;
+    }
+    100% {
+        margin-top:17px;
+        margin-right:-25px;
+    }
+}
+/*************Congratulations!*/
+#ten {
+    background-color:#2f303c;
+    box-shadow: inset 0 -70px 300px rgba(0, 0, 0, 0.9);
+}
+#ten h2 {
+    color:#ffea39;
+    font-size: 46px;
+    font-family: "Montserrat", "Oswald", sans-serif;
+    font-weight: bold;
+    line-height:1;
+    margin-top:80px;
+    margin-bottom:25px;
+    text-transform:uppercase;
+    text-align:center;
+}
+#ten h3 {
+    color:#fff;
+    text-shadow:1px 3px 6px rgba(0, 0, 0, 0.7);
+    font-family: "Dosis", "Oswald", sans-serif;
+    font-size: 4rem;
+}
+#ten hr {
+    box-shadow:0 2px 1px rgba(0, 0, 0, 0.7);
+}
+#ten p {
+    font-size:25px;
+    font-family:'Dosis', 'Oswald', sans-serif;
+    color:#fff;
+    font-weight:100;
+    line-height:1.5;
+}
+#ten .builder-section-content {
+    max-width:100%;
+    padding:0;
+}
+#ten .townbg {
+    height:600px;
+    margin-bottom:0;
+    margin-top:0;
+    margin-left:0;
+    width:auto;   
+}
+#ten .townbg img {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    box-shadow: inset -2px -5px 5px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+@media screen and (max-width:400px) {
+    #ten h2 {
+        font-size:30px;
+    }
+    #ten .congrats-key {
+        width:35%;
+    }
+}
+/*************Results Banner on Top*/
+#results {
+    padding:0;
+    overflow:hidden;
+}
+#results p {
+    color: #a3c0d4;
+    font-family: 'Bebas Neue', 'Oswald', sans-serif;
+    line-height: 1.03;
+    margin: 13px 0 13px 0;
+    font-weight: bold;
+    font-size: 26px;
+    text-shadow:1px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width:799px) {
+    #questions button {
+        display:block;
+        width:95%;
+        margin:10px;
+        line-height:1.2;
+    }
+    #questions span {
+        width:100%;
+        display:block;
+    }
+}

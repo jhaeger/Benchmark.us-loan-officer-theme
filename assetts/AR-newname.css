@@ -1,0 +1,13 @@
+#nn-intro {
+    min-height:90vh;
+    min-width:100vw;
+    background-size:contain;
+    background-position-x:center;
+}
+
+#nn-intro .builder-section-overlay {
+    background:url(/wp-content/uploads/sites/386/2016/07/newname-overlay.png);
+}
+#nn-after {
+    max-height:0px;
+}
